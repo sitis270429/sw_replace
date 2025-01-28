@@ -9,3 +9,7 @@ self.addEventListener('push', function (event) {
     //     headers: { 'Content-Type': 'application/json' }
     // });
 });
+
+self.addEventListener('message', event => {
+    console.log('Сообщение от клиента:', event.data);
+});
